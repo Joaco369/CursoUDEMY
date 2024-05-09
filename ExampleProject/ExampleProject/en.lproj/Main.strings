@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; configuration.title = "Cambio Texto"; ObjectID = "4a5-kC-Jgy"; */
+"4a5-kC-Jgy.configuration.title" = "Cambio Texto";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "4a5-kC-Jgy"; */
+"4a5-kC-Jgy.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Hola Mundo"; ObjectID = "GBo-3Q-E1K"; */
+"GBo-3Q-E1K.text" = "Hola Mundo";

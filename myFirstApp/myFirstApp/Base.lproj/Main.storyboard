@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="myFirstApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prP-HJ-QCH">
+                                <rect key="frame" x="145" y="518" width="103" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="NAVIGATE"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to house" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCj-U8-lQr">
+                                <rect key="frame" x="115.33333333333333" y="454" width="162.33333333333337" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYU-Gd-ORP">
+                                <rect key="frame" x="168" y="593" width="57" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GET"/>
+                                <connections>
+                                    <action selector="getButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GLc-Gq-u87"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Maz-r4-1xZ">
+                                <rect key="frame" x="168" y="638" width="57" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="PUT"/>
+                                <connections>
+                                    <action selector="putButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CAj-Ob-aWu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abb-Sq-VhG">
+                                <rect key="frame" x="154" y="683" width="85" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="DELETE"/>
+                                <connections>
+                                    <action selector="deleteButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rtx-Ye-Yxd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Hackermen!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Fo-JW-Ghn">
+                                <rect key="frame" x="0.0" y="408" width="393" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Maz-r4-1xZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6NN-iC-zZe"/>
+                            <constraint firstItem="NYU-Gd-ORP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8v0-j4-es6"/>
+                            <constraint firstItem="abb-Sq-VhG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C4b-GL-TTN"/>
+                            <constraint firstItem="prP-HJ-QCH" firstAttribute="centerX" secondItem="abb-Sq-VhG" secondAttribute="centerX" id="JbA-qm-ndD"/>
+                            <constraint firstItem="prP-HJ-QCH" firstAttribute="top" secondItem="YCj-U8-lQr" secondAttribute="bottom" constant="40" id="PMm-2B-owJ"/>
+                            <constraint firstItem="prP-HJ-QCH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dkZ-Am-zyy"/>
+                            <constraint firstItem="prP-HJ-QCH" firstAttribute="centerX" secondItem="Maz-r4-1xZ" secondAttribute="centerX" id="fEA-sp-7dx"/>
+                            <constraint firstItem="0Fo-JW-Ghn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fHC-fV-drf"/>
+                            <constraint firstItem="0Fo-JW-Ghn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gYH-ir-M4Y"/>
+                            <constraint firstItem="prP-HJ-QCH" firstAttribute="centerX" secondItem="NYU-Gd-ORP" secondAttribute="centerX" id="icp-hZ-MZw"/>
+                            <constraint firstItem="0Fo-JW-Ghn" firstAttribute="centerX" secondItem="YCj-U8-lQr" secondAttribute="centerX" id="jt2-0I-MKK"/>
+                            <constraint firstItem="NYU-Gd-ORP" firstAttribute="top" secondItem="prP-HJ-QCH" secondAttribute="bottom" constant="40" id="lSd-33-QTT"/>
+                            <constraint firstItem="YCj-U8-lQr" firstAttribute="top" secondItem="0Fo-JW-Ghn" secondAttribute="bottom" constant="10" id="mgb-a3-2m1"/>
+                            <constraint firstItem="YCj-U8-lQr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pMf-ZT-a3I"/>
+                            <constraint firstItem="Maz-r4-1xZ" firstAttribute="top" secondItem="NYU-Gd-ORP" secondAttribute="bottom" constant="10" id="qge-mY-8YX"/>
+                            <constraint firstItem="abb-Sq-VhG" firstAttribute="top" secondItem="Maz-r4-1xZ" secondAttribute="bottom" constant="10" id="tYh-de-ayJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="helloLabel" destination="0Fo-JW-Ghn" id="rOf-rw-IwF"/>
+                        <outlet property="welcomeLabel" destination="YCj-U8-lQr" id="raG-hC-NEh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
